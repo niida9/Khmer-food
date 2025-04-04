@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <!-- Bootstrap CSS -->
+    <link href="css\bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\bootstrap-grid.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="image\logo\pngwing.com.png" width="100px">
+            <a class="navbar-brand brand" href="">យាយណែមម្ហូបខ្មែរ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="food.html">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="manu.html">មីនុយ</a></li>
+                    <li class="nav-item "><a class="nav-link" href="contact.html">ទំនាក់ទំនង</a></li>
+                    <a class="shop" href="#">
+                        <img src="image\icon_shopping\cart.png" width="30px">
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+     <div class="background-section">
+        <header class="text-white text-center py-5">
+            <h1 class="">សូមស្វាគមន៏មកកាន់ "យាយណែមម្ហូបខ្មែរ"</h1>
+            <p class="">អាហារខ្មែរគឺជាម្ហូបដ៏ល្អឥតខ្ចោះដែលសំដៅសម្គាល់ពីវប្បធម៌ និងប្រពៃណីរបស់ប្រជាជនកម្ពុជា។ <br>វាមានលក្ខណៈពិសេសដោយសាររូបមន្តបុរាណ និងការប្រើប្រាស់គ្រឿងផ្សំធម្មជាតិដូចជាស្លឹកស្លែ, ស្លឹកក្រូចសើច, ត្រាំង, និងគ្រឿងផ្សំផ្សេងៗទៀត។</p>
+            <a href="manu.html" class="btn btn-primary">ធ្វើការកម្មង់</a>
+        </header>
+     </div>
+    <!-- food Section -->
+    <section id="recipes" class="container my-5">
+        <h2 class="text-center mb-4">មុខម្ហូបប្រចាំហាង</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image\item\food\image.png" class="card-img-top" alt="Recipe 1">
+                    <div class="card-body center-card-body">
+                        <h5 class="card-title">ក្តាមអប់មីសួរ</h5>
+                        <p class="card-text">ម្ហូបនេះបង្ហាញអំពីភាពជាក់ស្តែងនៃរសជាតិសមុទ្រក្នុងបែបសាមញ្ញ តែឆ្ងាញ់ជ្រាលជ្រះដែលតំណាងឲ្យស្នាដៃសិល្បៈម្ហូបខ្មែរ។</p>
+                        <p class="card-text">តម្លៃ៖ ២៥០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image\item\food\2.jpg" class="card-img-top" alt="Recipe 2">
+                    <div class="card-body center-card-body">
+                        <h5 class="card-title">មាន់ស្រែទឹកត្រីកោះកុង</h5>
+                        <p class="card-text">មាន់ស្រែទឹកត្រីកោះកុង គឺជាអាហារខ្មែរដែលល្បីដោយសាររសជាតិពិសេសនៃទឹកត្រីខ្មែរ និងភាពស្រស់ស្អាតនៃសាច់មាន់ស្រែ។ </p>
+                        <p class="card-text">តម្លៃ៖ ៦០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="tikka">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image\item\food\3.jpg" class="card-img-top" alt="Recipe 3">
+                    <div class="card-body center-card-body">
+                        <h5 class="card-title">អាម៉ុកកូនខ្មែរ</h5>
+                        <p class="card-text">ជាម្ហូបឆ្ងាញ់ប៉ុណ្ណោះទេ តែវាក៏បង្ហាញអំពីវិធីសាស្រ្តចម្អិនបែបបុរាណ ដែលជាកេរ្តិ៍ដំណែលបុរាណខ្មែរដ៏ល្អឥតខ្ចោះ។</p>
+                        <p class="card-text">តម្លៃ៖ ៤០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="chocolate">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="location-widget">
+        <h4 class="location">ទីតាំងហាង</h4>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6813920331436!2d104.918102!3d11.5588315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951f4f0b3f8d7%3A0xe95ae5a3d23c27a7!2sTuol%20Sleng%20Genocide%20Museum!5e0!3m2!1sen!2skh!4v1692636812345!5m2!1sen!2skh" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <div class="location-details">
+            <p>GWX8+6M9, Saint 360, Phnom Penh, Cambodia</p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Tuol+Sleng+Genocide+Museum" target="_blank">ទំនាក់ទំនង៖</a>
+            <a href="tel:+85587795907">+885 096 853 511</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h4 class="location" style="margin: 30px;justify-content: center;display: flex;">អំពីអតិថិជន</h4>
+                <h4 style="margin: 30px;justify-content: center;display: flex;">សូមបំពេញព័ត៍មានរបស់អ្នកនៅខាងក្រោម</h4>
+            </div>
+            <form>
+                <!-- Customer Information -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="customerName" placeholder="ឈ្មោះ" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="customeremail" placeholder="អុីម៉ែល abc@gmail.com">
+                </div>
+                <div class="mb-3">
+                    <input type="tel" class="form-control" id="customerPhone" placeholder="លេខទូរស័ព្ទ +885" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="customerName" placeholder="អីពីមុខម្ហូប" required>
+                </div>
+
+
+    
+                <!-- Shipping Address -->
+                <div class="mb-3">
+                    <textarea class="form-control" id="shippingAddress" rows="3" placeholder="ទីតាំង" required></textarea>
+                </div>
+    
+                <!-- Additional Notes -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="customerother" placeholder="ផ្សេងៗ">
+                </div>
+    
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-custom">បញ្ចូល</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+            data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="https://web.facebook.com/HowToCookKhmerFood"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+            <!-- Telegram -->
+            <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee;"
+            href="https://t.me/Food_Khmer"
+            role="button"
+            ><i class="fab fa-telegram"></i
+          ></a>
+      
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="https://www.instagram.com/khmerfood_delicious1008/"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <div class="text-center p-3">
+          <h4><img src="image\logo\phone-call-solid-36.png" width="40px">ទំនាក់ទំនង </h4>
+          <h6>+885 96 873 2354/77 178 2462/87 234 111</h6>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="css\bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="image\logo\pngwing.com.png" width="100px">
+            <a class="navbar-brand brand" href="">យាយណែមម្ហូបខ្មែរ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="food.html">ទំព័រដើម</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        មីនុយ</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item drop​​" href="#food">សម្ល</a></li>
+                            <li><a class="dropdown-item drop" href="#cha">ឆា</a></li>
+                            <li><a class="dropdown-item drop" href="#brohuk">ប្រភេទអន្លក់</a></li>
+                            <li><a class="dropdown-item drop" href="#rice">បាយ</a></li>
+                            <li><a class="dropdown-item drop" href="#desert">បង្អែម</a></li>
+                            <li><a class="dropdown-item drop" href="#drink">ភេសជ្ជះ</a></li>
+                            <li><a class="dropdown-item drop" href="#all">ទាំងអស់</a></li>
+                          </ul></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">ទំនាក់ទំនង</a></li>
+                    <a class="icon_shopping" href="#">
+                        <img src="image\icon_shopping\cart.png" width="30px">
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- search button -->
+    <div class="container mt-5" style="padding: 10px;">
+        <div class="input-group" style="max-width: 600px; margin: 0 auto;"> <!-- Center and limit width -->
+            <div class="form-outline" style="flex: 1;"> <!-- Full width for the input -->
+                <input type="search"​ placeholder="ស្វែងរក" id="form1" class="form-control" style="height: 50px; font-size: 16px;" />
+            </div>
+            <button type="button" class="btn btn-primary" style="height: 50px; width: 70px;">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Header Section -->
+    <div class="background-menu">
+        <header class="text-white text-center py-5">
+            <h1>សូមស្វាគមន៏មកកាន់ "យាយណែមម្ហូបខ្មែរ"</h1>
+            <p>ផ្តល់ជូននូវឳជារសឈ្ងុយឆ្ងាញ់ពិសារ</p>
+            <a href="manu.html" class="btn btn-primary">ធ្វើការកម្មង់</a>
+        </header>
+     </div>
+
+    <!-- Food Menu Grid Section -->
+    <section id="all" class="container my-5">
+        <h2 class="text-center mb-5">មុខម្ហូប</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Food Item 2 -->
+
+            <!-- Food Item 3 -->
+                <div class="card food-item">
+                    <img src="image\item\food\១.jpg" class="food-img card-img-top" alt="Food 3">
+                    <div class="card-body">
+                        <h5 class="card-title">សម្លសម្លក់ </h5>
+                        <p class="card-text">ប្រើគ្រឿងទេសសម្បូរបែបនិងមានរសជាតិទន់ៗផ្អែមបន្តិច ប្រៃ សម្លនេះត្រូវបានចម្អិនជាមួយសាច់ត្រីនិងបន្លែផ្សេងៗ</p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div​>
+            <!-- Food Item 3 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\2.jpg" class="food-img card-img-top" alt="Food 3">
+                    <div class="card-body">
+                        <h5 class="card-title">មាន់ស្រែទឹកត្រីកោះកុង</h5>
+                        <p class="card-text">មាន់ស្រែទឹកត្រីកោះកុង គឺជាអាហារខ្មែរដែលល្បីដោយសាររសជាតិពិសេសនៃទឹកត្រីខ្មែរ និងសាច់មាន់ស្រែ។ </p>
+                        <p class="card-price">តម្លៃ៖ ៦០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\7.jpg" class="food-img card-img-top" alt="Food 3">
+                    <div class="card-body">
+                        <h5 class="card-title">សម្លម្ជូរព្រៃជើងមាន់</h5>
+                        <p class="card-text">រសជាតិឆ្ងាញ់បែបជូអែមហិរតិចៗ គ្រឿងដិត ពិសារហើយចង់ពិសារទៀត មិនត្រលាន់ឡើយ.</p>
+                        <p class="card-price">តម្លៃ៖ ៣៥០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\8.jpg" class="food-img card-img-top" alt="Food 4">
+                    <div class="card-body">
+                        <h5 class="card-title">សម្លម្ជូរត្រយោងចេក</h5>
+                        <p class="card-text">រសជាតិជូរល្មមឆ្ងាញ់ពិសារ ជាមួយនឹងសាច់មាន់ស្រែពិតៗ</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\cha\3.jpg" class="food-img card-img-top" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">សម្លម្ជូព្រៃសាច់គោ </h5>
+                        <p class="card-text">ប្រើប្រាស់សាច់គោ ដោយការលាយគ្រឿងទេសធម្មជាតិស្រួលធ្វើឲ្យមានរសជាតិប្រៃ ទាំងក្រហម និងឆ្ងាញ់</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 5 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\4.jpg" class="food-img card-img-top" alt="Food 5">
+                    <div class="card-body">
+                        <h5 class="card-title">តុងយ៉ុាំបង្កងជូអែម</h5>
+                        <p class="card-text">រសជាតិឆ្ងាញ់បែបជូអែមហិរតិចៗ ពិសារហើយចង់ពិសារទៀត មិនត្រលាន់ឡើយ.</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 6 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\9.jpg" class="food-img card-img-top" alt="Food 6">
+                    <div class="card-body">
+                        <h5 class="card-title">ស្ងោរម្រះ</h5>
+                        <p class="card-text">រសជាតិឆ្ងាញ់ជាជម្រើសសម្រាប់បងប្អូនដែលចូលចិត្តញុាំម្រះថែមទាំងជំនួយដល់សុខភាពទៀតផង</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 6 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\10.jpg" class="food-img card-img-top" alt="Food 6">
+                    <div class="card-body">
+                        <h5 class="card-title">សម្លប្រហើ</h5>
+                        <p class="card-text">ជាប្រភេទសម្លខ្មែរ​ដែលមាន​រសជាតិខ្លាំង និងឈ្ងុយដោយសារប្រើ គ្រឿងប្រហើរ ដែលសំបូរបែប </p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 6 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\11.jpg" class="food-img card-img-top" alt="Food 6">
+                    <div class="card-body">
+                        <h5 class="card-title">សម្លករកូ</h5>
+                        <p class="card-text">សម្លបែបបុរាណខ្មែរមានរសឆ្ងាញ់ជាមួយបន្លែគ្រប់មុខបង្កើតដោយការប្រើគ្រឿងស្លឹកបន្លែ និងគ្រឿងទេសធម្មជាតិ។ </p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 6 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\12.jpg" class="food-img card-img-top" alt="Food 6">
+                    <div class="card-body">
+                        <h5 class="card-title">សម្លម្ជូយួន </h5>
+                        <p class="card-text">គឺមានសារជាតិឆ្ងាញ់ដោយសារប្រើប្រាស់គ្រឿងទេសសម្បូរបែប ហើយមានស្លឹកបន្លែ និងកសិផលផ្សេងៗ។</p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 6 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\13.jpg" class="food-img card-img-top" alt="Food 6">
+                    <div class="card-body">
+                        <h5 class="card-title">ម្ជូប្រលិត</h5>
+                        <p class="card-text">ជាម្ហូបដែលសាមញ្ញ ប៉ុន្តែមានរសជាតិឆ្ងាញ់ និងចាំបាច់បរិភោគនៅក្នុងគ្រួសារដើម្បីបង្កើតការចងចាំដ៏ល្អ</p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 6 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\14.jpg" class="food-img card-img-top" alt="Food 6">
+                    <div class="card-body">
+                        <h5 class="card-title">សម្លម្ជូស្លឹកអំពិលត្រីស្រែ</h5>
+                        <p class="card-text">ម្ហូបខ្មែរ ដែលមានរសជាតិជូល្មម បន្ថែមជាមួយស្លឹកអំពិល និងត្រីស្រែ ដែលធ្វើឲ្យមានរសជាតិឆ្ងាញ់ </p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 6 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\15.jpg" class="food-img card-img-top" alt="Food 6">
+                    <div class="card-body">
+                        <h5 class="card-title">ស្ងោរជ្រក់សាច់មាន់</h5>
+                        <p class="card-text">ជាម្ហូបខ្មែរដែលមានរសជាតិល្អហួសប្លែក យ៉ាងខ្លាំង ឆ្ងាញ់ពិសារ។ </p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item 6 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\16.jpg" class="food-img card-img-top" alt="Food 6">
+                    <div class="card-body">
+                        <h5 class="card-title">សម្លសម្លក់ </h5>
+                        <p class="card-text">ប្រើគ្រឿងទេសសម្បូរបែបនិងមានរសជាតិទន់ៗផ្អែមបន្តិច ប្រៃ សម្លនេះត្រូវបានចម្អិនជាមួយសាច់ត្រីនិងបន្លែផ្សេងៗ</p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- cha 1-->
+            <div id="cha" class="col">
+                <div class="card food-item">
+                    <img src="image\item\cha\1.jpg" class="food-img card-img-top" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">ត្រីបំពងស្រួយទឹកត្រីកោះកុង</h5>
+                        <p class="card-text">ជាម្ហូបខ្មែរ ពេញនិយមណាស់ និងមានរសជាតិក្រោយឆ្អិនចេញពីការចៀនសាច់ត្រី ជាមួយទឹកត្រីជូអែមរសជាតិដិត </p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- cha 2-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\cha\2.jpg" class="food-img card-img-top" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">ត្រីចំហុយទឹកសាស៊ីវ​</h5>
+                        <p class="card-text">ជាម្ហូបខ្មែរ ដែលមកពីសាស៊ីវ (ទឹកសាស៊ីវ) ដែលមានរសជាតិនឹងជាផ្នែកជាតិដាច់ខ្លួន។</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- cha 1-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\cha\4.jpg" class="food-img card-img-top" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">ឆាគ្រឿងត្រីអណ្តែង</h5>
+                        <p class="card-text">គឺជាម្ហូបដែលមានរសជាតិត្រៀមខ្លួនទាំងស្រុងនឹងរសជាតិឆ្ងាញ់ ធានាញុាំហើយចង់ញុាំទៀត</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- cha 1-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\cha\5.jpg" class="food-img card-img-top" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">ឆាមិកជូអែម</h5>
+                        <p class="card-text">ម្ហូបនេះគឺអាចធ្វើបានសាមញ្ញ ដោយប្រើប្រាស់គ្រឿងផ្សំធម្មជាតិស្រួលៗ ហើយមានរសជាតិផ្អែម និងឆ្ងាញ់។</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- cha 1-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\cha\6.jpg" class="food-img card-img-top" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">ឆាថ្លើមគោស្លឹកកាឆាយ</h5>
+                        <p class="card-text">រប្រើសាច់ថ្លើមគោសម្រាប់ការចៀន ឬឆា និងចំណុចគន្លងជាមួយស្លឹកកាឆាយដែលមានរសជាតិឆ្ងាញ់ </p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- cha 1-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\cha\7.jpg" class="food-img card-img-top" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">ឆាបន្លែគ្រប់មុខ</h5>
+                        <p class="card-text">រសជាតិឆ្ងាញ់ជាជម្រើសសម្រាប់បងប្អូនដែលចង់បានសុខភាពល្អ និងរូបរាងស្អាត​ហើយក៏សម្រាប់អ្នកញុាំបួសផងដែរ</p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- cha 1-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\cha\8.jpg" class="food-img card-img-top" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">ឆាបន្លែខ្ទឹមសម្រិច</h5>
+                        <p class="card-text">គឺជាម្ហូបខ្មែរដែលធ្វើចំពោះបន្លែប្រភេទផ្សេងៗ ហើយចេញពីការបំពងខ្ទឹមម្រិចឲ្យឆ្អិនហើយស្រួលក្នុងការទទួល។ </p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- cha 1-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\cha\9.jpg" class="food-img card-img-top" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">ឆាគ្រឿងក្នុងមាន់ជូអែម</h5>
+                        <p class="card-text">ប្រើគ្រឿងក្នុងមាន់និង អំពិលជូអែម ហើយប្រើប្រាស់គ្រឿងផ្សំផ្សេងៗដើម្បីធ្វើឲ្យមានរសជាតិឆ្ងាញ់។ </p>
+                        <p class="card-price">តម្លៃ៖ ២៥០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- cha 10-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\cha\10.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ឆាជ្រក់ស្ពៃសាច់ជ្រូក</h5>
+                        <p class="card-text">គឺជាម្ហូបខ្មែរ​ដែលមានរសជាតិទន់នឹងឆ្ងាញ់ បំពងជាមួយគ្រឿងផ្សំធម្មជាតិ​ វាមានរសជាតិផ្អែម ប្រៃ និងទន់ល្មម។</p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- brohuk-->
+            <div id="brohuk" class="col">
+                <div class="card food-item">
+                    <img src="image\item\brohuk\1.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">បុកកន្ទុយហេស</h5>
+                        <p class="card-text">បុកកន្ទុយហេស​ផ្ទាប់ជាមួយបន្លែជាម្ហូបខ្មែរដែលមានរសជាតិឆ្ងាញ់ អាចញ៉ាំជាមួយបាយឬនំបញ្ចុកផងដែរ!</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- brohuk-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\6.jpg" class="food-img card-img-top" alt="Food 2">
+                    <div class="card-body">
+                        <h5 class="card-title">បុកល្លុងទឹកប្រហុក</h5>
+                        <p class="card-text">រសជាតិដិត ឆ្ងាញ់ពិសារមាន ប៉ាតេ បង្ហា ក្តាមថ្ម ក្តាមស្រែ និងសាវម៉ុន</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛-៣៥០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- brohuk-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\brohuk\2.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ប្រហុកខ្ទិះ</h5>
+                        <p class="card-text">ជាម្ហូបសាមញ្ញតែមានក្លិនឆ្ងុយ និងមានរសជាតិជូរ ប្រៃ ផ្អែម ដែលឆ្ងាញ់ជាមួយបាយក្តៅៗ និងបន្លែស្រស់។</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- brohuk-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\brohuk\3.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ត្រីអណ្តែងអាំងទឹកប្រហុក</h5>
+                        <p class="card-text">ជាម្ហូបខ្មែរដ៏ឆ្ងាញ់ និងពេញនិយម ដែលប្រើត្រីអណ្តែងអាំងស្រួយលាយជាមួយទឹកប្រហុកឆ្ងុយ។</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+             <!-- brohuk-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\food\5.jpg" class="food-img card-img-top" alt="Food 1">
+                    <div class="card-body">
+                        <h5 class="card-title">បុកទឹកគ្រឿងបែបខ្មែរ</h5>
+                        <p class="card-text">ធានារសជាតិដិត ឆ្ងាញ់ពិសារដោយប្រើនូវគ្រឿងរបស់ខ្មែរពិតៗពិសេសក្លិនឈ្ងុយចេញពីប្រហុក</p>
+                        <p class="card-price">តម្លៃ៖ ៣៥០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- brohuk-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\brohuk\4.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">បុកក្តាមថ្ម</h5>
+                        <p class="card-text">របុកក្តាមថ្ម ជាម្ហូបខ្មែរដ៏ឆ្ងាញ់ ដែលមានរសជាតិជូរ ប្រៃ ផ្អែម និងហិរ (បើចូលចិត្ត)។ </p>
+                        <p class="card-price">តម្លៃ៖ ៤០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- brohuk-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\brohuk\5.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ប្រហុកដុតលើជ្រុញ</h5>
+                        <p class="card-text">មានរសជាតិឆ្ងាញ់ជាពិសេស ព្រោះវាប្រើប្រហុកខ្ទិះដុតលើជ្រុញឲ្យឆ្អិនល្អ និងមានក្លិនឆ្ងុយឆ្ញាញ់។ </p>
+                        <p class="card-price">តម្លៃ៖ ៣០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- brohuk-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\brohuk\6.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ពង់ត្រីចំហុយពង់ទាប្រៃ</h5>
+                        <p class="card-text">ម្ហូបខ្មែរដ៏ឆ្ងាញ់ដែលប្រើពង់ត្រី លាយជាមួយពង់ទាប្រៃដើម្បីបន្ថែមរសជាតិផ្អែមប្រៃឆ្ងាញ់</p>
+                        <p class="card-price">តម្លៃ៖ ៣០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- brohuk-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\brohuk\7.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">បុកសណ្តែកជ្រូកខ្វៃ</h5>
+                        <p class="card-text">ប្រើគ្រឿងផ្សំផ្សេងៗដើម្បីបង្កើតរសជាតិជូអែមហិរឆ្ងាញ់ ញុាំជាមួយបន្លែស្រស់និងបាយក្តៅបាន។</p>
+                        <p class="card-price">តម្លៃ៖ ៤០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- brohuk-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\brohuk\8.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ជ្រូកខ្វៃទឹកត្រីកោះកុង</h5>
+                        <p class="card-text">មានរសជាតិឆ្ងាញ់ដោយសារតែការរួមបញ្ចូលគ្នារវាងសាច់ជ្រូកខ្វៃ និងទឹកត្រីកោះកុង</p>
+                        <p class="card-price">តម្លៃ៖ ៤០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- rice-->
+            <div id="rice" class="col">
+                <div class="card food-item">
+                    <img src="image\item\rice\១.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">បាយស</h5>
+                        <p class="card-text">បាយស(មួយឆ្នាំង)ញុាំជាមួយម្ហូបផ្សេងៗជាច្រើនទៀត ដូចជា​​ប្រហុក, ឆា, សម្ល, និងអាហារប្រចាំថ្ងៃផ្សេងៗ។</p>
+                        <p class="card-price">តម្លៃ៖ ៨០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- rice-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\rice\2.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">បបរគ្រឿងសមុទ្រ</h5>
+                        <p class="card-text">ម្ហូបមួយដែលមានប្រយោជន៍នៅតំបន់ជាមួយសមុទ្រ ដែលជារសជាតិឆ្ងាញ់</p>
+                        <p class="card-price">តម្លៃ៖ ៦០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- rice-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\rice\3.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">គុយទាវ</h5>
+                        <p class="card-text">មានច្រើនរសជាតិសម្រាប់ជ្រើសរើស សាច់គោ គ្រឿងសមុទ្រ សាច់ជ្រូក</p>
+                        <p class="card-price">តម្លៃ៖ ៨០០០៛ - ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- rice-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\rice\4.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">បាយមាន់</h5>
+                        <p class="card-text">ជាមួយនឹងរសជាតិឆ្ងាញ់ពិសារ ដោយសារគ្រឿងផ្សំប្រចាំហាងល្អឥតខ្ចោះតែម្តង</p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- rice-->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\rice\5.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">បាយឆាគ្រឿងសមុទ្រ</h5>
+                        <p class="card-text">ជាម្ហូបខ្មែរដែលប្រើគ្រឿងសមុទ្រមានរសជាតិឆ្ងាញ់ និងពេញនិយមណាស់។</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert1 -->
+            <div id="desert" class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\1.jpg" class="food-img card-img-top" alt="Food 1">
+                    <div class="card-body">
+                        <h5 class="card-title">នំអាកោ</h5>
+                        <p class="card-text">ជានំខ្មែរ​ប្រពៃណីដែលមានរសជាតិកាន់តែផ្អែម និងមានឈ្មោះល្បីនៅក្នុងប្រទេសកម្ពុជា</p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert2 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\2.jpg" class="food-img card-img-top" alt="Food 2">
+                    <div class="card-body">
+                        <h5 class="card-title">បង្អែមចេកខ្ទិះ</h5>
+                        <p class="card-text">បង្អែមខ្មែរ​ដែលមានរសជាតិផ្អែមឆ្ងុយឆ្ងាញ់ និងល្អសម្រាប់អ្នកដែលចូលចិត្តអាហារផ្អែម</p>
+                        <p class="card-price">តម្លៃ៖ ៦០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert3 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\3.jpg" class="food-img card-img-top" alt="Food 3">
+                    <div class="card-body">
+                        <h5 class="card-title">បង្អែមគ្រប់មុខ</h5>
+                        <p class="card-text">មានច្រើនរសជាតិក្នុងប្រអប់តែមួយ រសជាតិមិនសូវផ្អែមតែឆ្ងាញ់ពិសារ</p>
+                        <p class="card-price">តម្លៃ៖ ៣០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert4 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\4.jpg" class="food-img card-img-top" alt="Food 4">
+                    <div class="card-body">
+                        <h5 class="card-title">នំកូស្លឹកតយ</h5>
+                        <p class="card-text">ឆ្ងាញ់ពិសារសម្រាប់លាងមាត់ ក្លិនឆ្ងុយដួងខ្ទិះជាមួយនិងស្លឹកតយផងដែរ</p>
+                        <p class="card-price">តម្លៃ៖ ៦០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert5 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\5.jpg" class="food-img card-img-top" alt="Food 5">
+                    <div class="card-body">
+                        <h5 class="card-title">នំផ្លែអាយស្លឹកតយ</h5>
+                        <p class="card-text">ឆ្ងាញ់ពិសារសម្រាប់លាងមាត់ ក្លិនឆ្ងុយដួងខ្ទិះជាមួយនិងស្លឹកតយផងដែរ</p>
+                        <p class="card-price">តម្លៃ៖ ៦០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert6 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\6.jpg" class="food-img card-img-top" alt="Food 6">
+                    <div class="card-body">
+                        <h5 class="card-title">បបរឡោតខ្ទិះដូង</h5>
+                        <p class="card-text">ឆ្ងាញ់ពិសារសម្រាប់លាងមាត់ ក្លិនឆ្ងុយដួងខ្ទិះ​ ខ្នុរនំ ជាមួយនិងស្លឹកតយផងដែរ</p>
+                        <p class="card-price">តម្លៃ៖ ៦០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert7 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\7.jpg" class="food-img card-img-top" alt="Food 7">
+                    <div class="card-body">
+                        <h5 class="card-title">ការ៉េមដូងខ្ទិះ</h5>
+                        <p class="card-text">រឆ្ងាញ់ពិសារសម្រាប់លាងមាត់ ក្លិនឆ្ងុយដួងខ្ទិះ​ជាមួយនិងស្លឹកតយផងដែរ</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert8 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\8.jpg" class="food-img card-img-top" alt="Food 8">
+                    <div class="card-body">
+                        <h5 class="card-title">បង្អែមឡុកឆិត</h5>
+                        <p class="card-text">ឆ្ងាញ់ពិសារសម្រាប់លាងមាត់ ក្លិនឆ្ងុយដួងខ្ទិះ​ ខ្នុរនំ ជាមួយនិងស្លឹកតយផងដែរ</p>
+                        <p class="card-price">តម្លៃ៖ ៦០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert9 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\9.jpg" class="food-img card-img-top" alt="Food 9">
+                    <div class="card-body">
+                        <h5 class="card-title">បង្អែមសណ្តែកខៀវ</h5>
+                        <p class="card-text">ជាបង្អែមធម្មជាតិដែលមានរសជាតិផ្អែម និងមានប្រយោជន៍សម្រាប់សុខភាព។</p>
+                        <p class="card-price">តម្លៃ៖ ៦០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert10 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\10.jpg" class="food-img card-img-top" alt="Food 10">
+                    <div class="card-body">
+                        <h5 class="card-title">នំផ្លែអាយស្លឹកតយ</h5>
+                        <p class="card-text">ឆ្ងាញ់ពិសារសម្រាប់លាងមាត់ ក្លិនឆ្ងុយដួងខ្ទិះជាមួយនិងស្លឹកតយផងដែរ</p>
+                        <p class="card-price">តម្លៃ៖ ៦០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert11 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\11.jpg" class="food-img card-img-top" alt="Food 11">
+                    <div class="card-body">
+                        <h5 class="card-title">ចាហួយដូងខ្មែរ</h5>
+                        <p class="card-text">ជាអាហារប្រពៃណីខ្មែរ ដែលមានឈ្មោះល្បីសម្រាប់រសជាតិផ្អែម និងមនោរម្យ។ </p>
+                        <p class="card-price">តម្លៃ៖ ៨០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Item desert12 -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\Dessert\12.jpg" class="food-img card-img-top" alt="Food 12">
+                    <div class="card-body">
+                        <h5 class="card-title">អន្សមជ្រូកពង់ទាប្រៃ</h5>
+                        <p class="card-text">រសជាតិគ្មានពីរ ឆ្ងាញ់ពិសារពង់ទាប្រៃមានច្រើនជាមួយនឹងក្លិនឆ្ងុយរបស់ស្លឹកតយ</p>
+                        <p class="card-price">តម្លៃ៖ ២០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- drink -->
+            <div id="drink" class="col">
+                <div class="card food-item">
+                    <img src="image\item\drink\1.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">តែក្រូចឆ្មាជីអង្កាម</h5>
+                        <p class="card-text">ល្អបំផុតសម្រាប់សុខភាព និងការសម្រក់ទម្ងន់ អ្នកទឹកនោមផ្អែមក៏អាចញុាំបាន</p>
+                        <p class="card-price">តម្លៃ៖ ៦០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- drink -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\drink\2.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ម្នាស់ស្រស់ក្រឡុក</h5>
+                        <p class="card-text">ល្អបំផុតសម្រាប់សុខភាព និងការសម្រក់ទម្ងន់ អ្នកទឹកនោមផ្អែមក៏អាចញុាំបាន</p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- drink -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\drink\3.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">កូកាកូឡា</h5>
+                        <p class="card-text">បន្ថែមរសជាតិម្ហូបរបស់អ្នកអោយកាន់តែឆ្ងាញ់ពិសារ កុំភ្លេចដាក់ទឹកកកផងណា៎</p>
+                        <p class="card-price">តម្លៃ៖ ២៥០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- drink -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\drink\4.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ស្ទីង</h5>
+                        <p class="card-text">បន្ថែមរសជាតិម្ហូបរបស់អ្នកអោយកាន់តែឆ្ងាញ់ពិសារ កុំភ្លេចដាក់ទឹកកកផងណា៎</p>
+                        <p class="card-price">តម្លៃ៖ ២៥០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- drink -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\drink\5.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">កាហ្វេទឹកដោះគោ</h5>
+                        <p class="card-text">រសជាតិប្រចាំហាងរបស់យាយណែមម្ហូបខ្មែរតែម្តងកុំភ្លេចសាកអោយសោះណា៎</p>
+                        <p class="card-price">តម្លៃ៖ ៨០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- drink -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\drink\7.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ម៉ាឆា ឡាតេ</h5>
+                        <p class="card-text">រសជាតិប្រចាំហាងរបស់យាយណែមម្ហូបខ្មែរតែម្តងកុំភ្លេចសាកអោយសោះណា៎</p>
+                        <p class="card-price">តម្លៃ៖ ៨០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+            <!-- drink -->
+            <div class="col">
+                <div class="card food-item">
+                    <img src="image\item\drink\6.jpg" class="food-img card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">FIJI</h5>
+                        <p class="card-text">ទឹកបរិសុទ្ធដែលល្អដាច់គេ និងល្អសម្រាប់សុខភាពផងដែរ តោះថែរក្សាសុខភាពទាំងអស់គ្នា</p>
+                        <p class="card-price">តម្លៃ៖ ១០០០០៛</p>
+                        <button class="btn btn-primary recipe-btn" data-recipe="carbonara">ដាក់កម្មង់</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+        <!-- Contact Section -->
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h4 class="location" style="margin: 30px;justify-content: center;display: flex;">អំពីអតិថិជន</h4>
+                <h4 style="margin: 30px;justify-content: center;display: flex;">សូមបំពេញព័ត៍មានរបស់អ្នកនៅខាងក្រោម</h4>
+            </div>
+            <form>
+                <!-- Customer Information -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="customerName" placeholder="ឈ្មោះ" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="customeremail" placeholder="អុីម៉ែល abc@gmail.com">
+                </div>
+                <div class="mb-3">
+                    <input type="tel" class="form-control" id="customerPhone" placeholder="លេខទូរស័ព្ទ +885" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="customerName" placeholder="អីពីមុខម្ហូប" required>
+                </div>
+
+
+    
+                <!-- Shipping Address -->
+                <div class="mb-3">
+                    <textarea class="form-control" id="shippingAddress" rows="3" placeholder="ទីតាំង" required></textarea>
+                </div>
+    
+                <!-- Additional Notes -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="customerother" placeholder="ផ្សេងៗ">
+                </div>
+    
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-custom">បញ្ចូល</button>
+            </form>
+        </div>
+    </div>
+
+<footer class="bg-body-tertiary text-center">
+<!-- Grid container -->
+<div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+    <!-- Facebook -->
+    <a
+    data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="https://web.facebook.com/HowToCookKhmerFood"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+    ></a>
+
+    <!-- Twitter -->
+    <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #55acee;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i
+    ></a>
+
+    <!-- Google -->
+    <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+    ></a>
+    <!-- Telegram -->
+    <a
+    data-mdb-ripple-init
+    class="btn text-white btn-floating m-1"
+    style="background-color: #55acee;"
+    href="https://t.me/Food_Khmer"
+    role="button"
+    ><i class="fab fa-telegram"></i
+    ></a>
+
+    <!-- Instagram -->
+    <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="https://www.instagram.com/khmerfood_delicious1008/"
+        role="button"
+        ><i class="fab fa-instagram"></i
+    ></a>
+
+    <!-- Linkedin -->
+    <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+    ></a>
+    </section>
+    <!-- Section: Social media -->
+</div>
+<div class="text-center p-3">
+    <h4><img src="image\logo\phone-call-solid-36.png" width="40px">ទំនាក់ទំនង </h4>
+    <h6>+885 96 873 2354/77 178 2462/87 234 111</h6>
+</div>
+<!-- Copyright -->
+</footer>
+    <!-- Bootstrap JS -->
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</html>
